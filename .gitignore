@@ -1,0 +1,25 @@
+# 1. Archivos compilados de Java
+*.class
+/bin/
+/out/
+
+# 2. Configuraciones locales y variables de entorno (Responde directamente al punto 7.b)
+.env
+*.local
+*.properties.local
+config/local.json
+
+# 3. Archivos de configuración de los IDEs (IntelliJ, Eclipse, VS Code)
+.idea/
+*.iml
+.vscode/
+.project
+.classpath
+.settings/
+
+# 4. Archivos propios del Sistema Operativo
+.DS_Store          # Mac
+Thumbs.db          # Windows
+ehthumbs.db
+.suo
+.tbs
