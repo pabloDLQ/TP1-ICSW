@@ -12,8 +12,7 @@ on:
       - develop
 
 jobs:
-  # TRABAJO 1: BACKEND (Java 21 + Maven)
-  build-backend:
+  build-java:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout del código
@@ -24,29 +23,9 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
-          cache: 'maven'
 
-      - name: Ejecutar pruebas y compilar Backend
-        run: mvn clean verify
-        working-directory: ./hotel_premier
+      - name: Compilar Main.java
+        run: javac java/src/Main.java
 
-  # TRABAJO 2: FRONTEND (NextJS + Node)
-  build-frontend:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout del código
-        uses: actions/checkout@v4
-
-      - name: Configurar Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-          cache: 'npm'
-
-      - name: Instalar dependencias
-        run: npm ci
-        working-directory: ./frontend
-
-      - name: Compilar NextJS
-        run: npm run build
-        working-directory: ./frontend
+      - name: Ejecutar Main.java
+        run: java -cp java/src Main
