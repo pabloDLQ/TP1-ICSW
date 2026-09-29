@@ -24,8 +24,8 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
-      - name: Compilar Main.java
-        run: javac java/src/Main.java
+      - name: Compilar clases Java
+        run: javac java/src/*.java
 
-      - name: Ejecutar Main.java
+      - name: Ejecutar Main
         run: java -cp java/src Main

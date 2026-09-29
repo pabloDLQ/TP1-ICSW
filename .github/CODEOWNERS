@@ -1,28 +1,10 @@
-# DUEÑOS
-*                               @PabloDLQ @juancganis
+# DUEÑOS GLOBALES DEL REPOSITORIO
+* @PabloDLQ @juancganis
 
-# DESARROLLO FRONTEND
-/frontend/                      @LucasProdo @Scilingo-Valentin
-/src/main/resources/static/     @LucasProdo @Scilingo-Valentin
-/src/main/resources/templates/  @LucasProdo @Scilingo-Valentin
-*.html                          @LucasProdo @Scilingo-Valentin
-*.css                           @LucasProdo @Scilingo-Valentin
-*.js                            @LucasProdo @Scilingo-Valentin
-
-# DESARROLLO BACKEND
-/backend/                       @juancganis @PabloDLQ
-/src/main/java/                 @juancganis @PabloDLQ
-*.java                          @juancganis @PabloDLQ
-pom.xml                         @juancganis @PabloDLQ
-build.gradle                    @juancganis @PabloDLQ
-
-# SCRIPTS SQL Y BASE DE DATOS
-/sql/                           @PabloDLQ @Scilingo-Valentin
-/scripts/                       @PabloDLQ @Scilingo-Valentin
-/db/                            @PabloDLQ @Scilingo-Valentin
-/database/                      @PabloDLQ @Scilingo-Valentin
-*.sql                           @PabloDLQ @Scilingo-Valentin
+# DESARROLLO BACKEND Y CÓDIGO JAVA
+/java/src/Main.java         @juancganis @PabloDLQ
+/java/src/Mensaje.java      @Scilingo-Valentin @LucasProdo
 
 # ACCIONES DE GITHUB Y CONFIGURACIÓN 
-/.github/workflows/             @PabloDLQ @LucasProdo
-.gitignore                      @juancganis
+/.github/workflows/         @PabloDLQ @LucasProdo
+.gitignore                  @juancganis @Scilingo-Valentin
