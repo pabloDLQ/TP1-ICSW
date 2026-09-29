@@ -4,10 +4,10 @@ Este repositorio contiene la implementación práctica del Trabajo Práctico Int
 
 ## Equipo de Desarrollo
 
-* @PabloDLQ
-* @juancganis
-* @Scilingo-Valentin
-* @LucasProdo
+* @PabloDLQ - Pablo Dellacqua
+* @juancganis - Juan Cruz Ganis
+* @Scilingo-Valentin - Valentin Scilingo
+* @LucasProdo - Lucas Prodolliet
 
 ## Tecnologias y Requisitos
 
@@ -32,13 +32,16 @@ El proyecto está configurado para ser compilado y ejecutado fácilmente. Los co
 ## Flujo de Trabajo (Gitflow)
 
 Este proyecto sigue el modelo Gitflow:
-* main: Código en producción.
-* develop: Rama de integración.
-* feature/*: Nuevas funcionalidades.
-* release/*: Preparación de pases a producción.
-* hotfix/*: Corrección de errores en producción.
+- main: Código en producción.
+- develop: Rama de integración.
+- feature/* (y variantes de nomenclatura implementadas por el equipo): Nuevas funcionalidades.
+- release/*: Preparación de pases a producción.
+- hotfix/*: Corrección de errores en producción.
 
 Todo cambio hacia main o develop requiere un Pull Request (PR), el cual dispara nuestra Integración Continua (ci.yml) y asigna revisores automáticamente basados en el archivo CODEOWNERS.
+
+> **Nota sobre el ciclo de vida de las ramas:**  
+> Siguiendo las buenas prácticas profesionales de Gitflow y control de versiones, las ramas temporales de soporte del tipo `release/*` y `hotfix/*` fueron eliminadas del repositorio remoto una vez que sus cambios se fusionaron exitosamente a `main` y `develop`, respaldando el historial mediante *Tags* y el registro de *merges*. Excepcionalmente, se optó por mantener visibles en el repositorio remoto las ramas de desarrollo de funcionalidades (con sus respectivas nomenclaturas iniciales tales como `feature1`, `Feature_2`, etc.) para facilitar la trazabilidad y la corrección académica del trabajo práctico.
 
 ## Respuestas a la Consigna
 
