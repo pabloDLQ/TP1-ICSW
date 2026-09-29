@@ -1,0 +1,52 @@
+name: CI Build
+
+# Se ejecuta en cada Pull Request y en cada push a main o develop
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  # TRABAJO 1: BACKEND (Java 21 + Maven)
+  build-backend:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v4
+
+      - name: Configurar Java 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+          cache: 'maven'
+
+      - name: Ejecutar pruebas y compilar Backend
+        run: mvn clean verify
+        working-directory: ./hotel_premier
+
+  # TRABAJO 2: FRONTEND (NextJS + Node)
+  build-frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del código
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Instalar dependencias
+        run: npm ci
+        working-directory: ./frontend
+
+      - name: Compilar NextJS
+        run: npm run build
+        working-directory: ./frontend
