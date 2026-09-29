@@ -8,5 +8,6 @@ public class Main{
         System.out.println(Mensaje.obtenerDespedida());
         //Otro mensaje desde Mensaje funcionalidad H (Modificacion A)
         System.out.println(Mensaje.obtenerOtroMensaje());
+        // funcionalidad H Modificacion B
     }
 }
